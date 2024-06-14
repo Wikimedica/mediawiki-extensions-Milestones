@@ -1,0 +1,64 @@
+{
+	"name": "Milestones",
+	"version": "0.1a",
+	"author": [
+		"[https://wikimedi.ca/wiki/Utilisateur:Antoine_Mercier-Linteau Antoine Mercier-Linteau]"
+	],
+	"url": "https://wikimedi.ca",
+	"descriptionmsg": "milestones-extension-description",
+	"license-name": "GPL-3.0-or-later",
+	"type": "hooks",
+	"requires": {
+		"MediaWiki": ">= 1.40.0",
+		"extensions": { "Echo": "*", "WikimedicaAccount": "*" }
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\Milestones\\Milestones": "Milestones.class.php",
+		"MediaWiki\\Extension\\Milestones\\Milestone": "includes/Milestone.php",
+		"MediaWiki\\Extension\\Milestones\\NiveauEditorial": "includes/NiveauEditorial.php",
+		"MediaWiki\\Extension\\Milestones\\MilestonePresentationModel": "includes/presentationModels/MilestonePresentationModel.php",
+		"MediaWiki\\Extension\\Milestones\\PromotionReachedPresentationModel": "includes/presentationModels/PromotionReachedPresentationModel.php",
+		"MediaWiki\\Extension\\Milestones\\RewardGainedPresentationModel": "includes/presentationModels/RewardGainedPresentationModel.php",
+		"MediaWiki\\Extension\\Milestones\\SpecialTestMilestones" : "includes/specials/SpecialTestMilestones.php",
+		"MediaWiki\\Extension\\Milestones\\SpecialManageUserMilestones" : "includes/specials/SpecialManageUserMilestones.php"
+		
+	},
+	"ConfigRegistry": {
+		"main": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		"Milestones": {
+			"value": [
+				"RedacteurAdjoint",
+				"RedacteurAdjointPrincipal",
+				"RedacteurAssocie",
+				"RedacteurAssocieSenior",
+				"RedacteurSenior",
+				"EZResus2MonthsFree",
+				"EZResusFullyFree"
+			],
+			"description": "A list of potential milestones."
+		}
+	},
+	"DefaultUserOptions": {
+		"echo-subscriptions-email-milestones-promotion-reached": true,
+		"echo-subscriptions-web-milestones-promotion-reached": true,
+		"echo-subscriptions-email-milestones-reward-gained": true,
+		"echo-subscriptions-web-milestones-reward-gained": true
+	},
+	"Hooks": {
+		"MultiContentSave": "MediaWiki\\Extension\\Milestones\\Milestones::onMultiContentSave",
+		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\Milestones\\Milestones::onBeforeCreateEchoEvent",
+		"GetPreferences" : "MediaWiki\\Extension\\Milestones\\Milestones::onGetPreferences"
+	},
+	"MessagesDirs": {
+		"Milestones": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+		"TestMilestones" : "MediaWiki\\Extension\\Milestones\\SpecialTestMilestones",
+		"ManageUserMilestones" : "MediaWiki\\Extension\\Milestones\\SpecialManageUserMilestones"
+	},
+	"manifest_version": 2
+}
