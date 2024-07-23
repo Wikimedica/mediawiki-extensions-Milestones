@@ -32,12 +32,12 @@ class EZResus2MonthsFree extends Milestone {
     protected function getNotificationMessage() { return '2 mois gratuits pour l\'application EZResus.'; }
 
     /** @inheritdoc */
-    public function getName() { return 'Code de promotion <a href="https://ezresus.com/">EZResus</a>'; }
+    public function getName() { return 'Code de promotion <a href="https://ezresus.com/">EZResus</a> (2 mois gratuits)'; }
 
     /** @inheritdoc */
     public function getMessage() { 
         if(!$this->hasMilestone()) { return 'Vous n\'avez pas accès à cette récompense.'; }
 
-        return 'entrez le code Wikimedica pour avoir 2 moins gratuits';
+        return 'entrez le code Wikimedica pour avoir 2 mois gratuits';
     }
 }

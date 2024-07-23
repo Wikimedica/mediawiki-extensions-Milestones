@@ -103,6 +103,8 @@ abstract class Milestone {
             ],
             'agent' => $this->user
         ]);
+
+        return true;
     }
 
     /** @return string|false the notification message or false if that milestone does not lauch notifications. */

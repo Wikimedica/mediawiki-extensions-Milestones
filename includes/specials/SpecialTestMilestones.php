@@ -28,8 +28,7 @@ class SpecialTestMilestones extends \FormSpecialPage
     /**
      * @inheritdoc
      * */
-    public function __construct() 
-    {
+    public function __construct() {
         parent::__construct('TestMilestones', 'edit');
         $this->getOutput()->setRobotPolicy('noindex,nofollow'); // Do not index that special page.
     }
@@ -42,8 +41,7 @@ class SpecialTestMilestones extends \FormSpecialPage
     /**
      * @inheritdoc
      **/
-    public function preText() 
-    {
+    public function preText() {
         $request = $this->getRequest();
         $user = $this->getUser();
         $this->setHeaders();
@@ -66,8 +64,7 @@ class SpecialTestMilestones extends \FormSpecialPage
     /**
      * @inheritdoc
      **/
-    public function getFormFields()
-    {
+    public function getFormFields() {
         global $wgMilestones;
         
         $form =  [
@@ -86,8 +83,7 @@ class SpecialTestMilestones extends \FormSpecialPage
     /**
      * @inheritdoc
      * */
-    public function onSubmit($data)
-    {           
+    public function onSubmit($data) {           
         global $wgMilestones;
 
         if(isset($data['milestone'])) { 

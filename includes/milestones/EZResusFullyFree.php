@@ -21,7 +21,7 @@ class EZResusFullyFree extends Milestone {
 
         while($categories->valid()) {
             $cat = $categories->current();
-            if(cat->getText() == 'Rédacteurs seniors') { return true; }
+            if($cat->getText() == 'Rédacteurs seniors') { return true; }
             $categories->next();
         }
         
@@ -32,12 +32,12 @@ class EZResusFullyFree extends Milestone {
     protected function getNotificationMessage() { return 'L\'application EZResus complètement gratuite !'; }
 
     /** @inheritdoc */
-    public function getName() { return 'Code de promotion <a href="https://ezresus.com/">EZResus</a>:'; }
+    public function getName() { return 'Code de promotion <a href="https://ezresus.com/">EZResus</a> (gratuit à vie):'; }
 
     /** @inheritdoc */
     public function getMessage() { 
         if(!$this->hasMilestone()) { return 'Vous n\'avez pas accès à cette récompense.'; }
 
-        return 'entrez le code Wikimedica2023 pour que l\'application soit 100% gratuite';
+        return 'entrez le code Wikimedica2023 pour que l\'application soit 100% gratuite (vous devez suppriper votre présent compte, passer par app.ezresus.com et en créer un nouveau avec avec le code comme clé institutionnelle)';
     }
 }
