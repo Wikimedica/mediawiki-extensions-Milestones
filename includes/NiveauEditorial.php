@@ -59,6 +59,8 @@ abstract class NiveauEditorial extends Milestone {
 
         if(intval($template[0]['niveau']) >= $this->level) {
             $this->apply(); // The user already has that editorial level.
+
+            return true;
         }
 
         return false;
