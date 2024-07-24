@@ -38,6 +38,6 @@ class EZResusFullyFree extends Milestone {
     public function getMessage() { 
         if(!$this->hasMilestone()) { return 'Vous n\'avez pas accès à cette récompense.'; }
 
-        return 'entrez le code Wikimedica2023 pour que l\'application soit 100% gratuite (vous devez suppriper votre présent compte, passer par app.ezresus.com et en créer un nouveau avec avec le code comme clé institutionnelle)';
+        return wfMessage('milestones-ezresusfullyfree-message')->parse();
     }
 }

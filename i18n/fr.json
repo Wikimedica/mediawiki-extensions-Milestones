@@ -7,5 +7,7 @@
     "notification-header-milestones-reward-gained": "Vous avez une nouvelle récompense !",
     "notification-header-milestones-promotion-reached": "Vous êtes éligibles à une promotion !",
     "testmilestones": "Tester les notifications des accomplissements",
-    "manageusermilestones": "Gérer les accomplissements des utilisateurs"
+    "manageusermilestones": "Gérer les accomplissements des utilisateurs",
+    "milestones-ezresus2monthsfree-message": "entrez le code Wikimedica pour avoir 2 mois gratuits",
+    "milestones-ezresusfullyfree-message": "entrez le code Wikimedica2023 pour que l'application soit 100% gratuite (vous devez supprimer votre présent compte, passer par app.ezresus.com et en créer un nouveau avec avec le code comme clé institutionnelle)"
 }

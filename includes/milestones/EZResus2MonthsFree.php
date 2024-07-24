@@ -38,6 +38,6 @@ class EZResus2MonthsFree extends Milestone {
     public function getMessage() { 
         if(!$this->hasMilestone()) { return 'Vous n\'avez pas accès à cette récompense.'; }
 
-        return 'entrez le code Wikimedica pour avoir 2 mois gratuits';
+        return wfMessage('milestones-ezresus2monthsfree-message')->parse();
     }
 }
