@@ -26,7 +26,7 @@ class PromotionReachedPresentationModel extends \MediaWiki\Extension\Milestones\
     public function getSecondaryLinks() {        
         return [
             [  
-                'url' => \Title::newFromText("Politiques/Niveaux_éditoriaux", NS_PROJECT)->getFullUrl().'#Procédure_d\'obtention',
+                'url' => \Title::makeTitle(NS_PROJECT, "Politiques/Niveaux_éditoriaux", 'Procédure_d\'obtention')->getFullUrl(),
                 'label' => 'Appliquer pour la promotion',
                 'icon' => false
             ]

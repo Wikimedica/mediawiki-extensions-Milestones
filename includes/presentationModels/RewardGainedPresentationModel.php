@@ -26,7 +26,7 @@ class RewardGainedPresentationModel extends \MediaWiki\Extension\Milestones\Mile
     public function getSecondaryLinks() {        
         return [
             [  
-                'url' => 'Spécial:Préférences#mw-prefsection-milestones',
+                'url' => \Title::makeTitle(NS_SPECIAL, 'Préférences', 'mw-prefsection-milestones')->getFullURL(),
                 'label' => 'Voir mes récompenses',
                 'icon' => false
             ]
