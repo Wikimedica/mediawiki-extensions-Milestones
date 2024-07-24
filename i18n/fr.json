@@ -1,6 +1,8 @@
 {
     "echo-category-title-milestones-promotion-reached": "Promotions",
     "echo-category-title-milestones-reward-gained": "Récompenses",
+    "echo-pref-tooltip-milestones-promotion-reached": "Alertes lancées lorsque vous êtes éligibles à un nouveau niveau éditorial",
+    "echo-pref-tooltip-milestones-reward-gained": "Alertes lancées lorsque vous avez obtenu une nouvelle récompense",
     "prefs-milestones": "Promotions et récompenses",
     "milestones-milestone-not-achieved": "Vous n'avez pas encore accès à cet item",
     "milestones-milestone-achieved": "Vous avez accès à cet item",
