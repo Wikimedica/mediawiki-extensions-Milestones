@@ -49,7 +49,8 @@
 	"Hooks": {
 		"MultiContentSave": "MediaWiki\\Extension\\Milestones\\Milestones::onMultiContentSave",
 		"BeforeCreateEchoEvent": "MediaWiki\\Extension\\Milestones\\Milestones::onBeforeCreateEchoEvent",
-		"GetPreferences" : "MediaWiki\\Extension\\Milestones\\Milestones::onGetPreferences"
+		"GetPreferences" : "MediaWiki\\Extension\\Milestones\\Milestones::onGetPreferences",
+		"PreferencesGetIcon": "MediaWiki\\Extension\\Milestones\\Milestones::onPreferencesGetIcon"
 	},
 	"MessagesDirs": {
 		"Milestones": [
