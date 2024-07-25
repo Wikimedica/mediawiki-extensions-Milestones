@@ -32,7 +32,7 @@ class EZResusFullyFree extends Milestone {
     protected function getNotificationMessage() { return 'L\'application EZResus complètement gratuite !'; }
 
     /** @inheritdoc */
-    public function getName() { return 'Code de promotion <a href="https://ezresus.com/">EZResus</a> (gratuit à vie):'; }
+    public function getName() { return 'Code de promotion <a href="https://ezresus.com/">EZResus</a> (gratuit à vie)'; }
 
     /** @inheritdoc */
     public function getMessage() { 
