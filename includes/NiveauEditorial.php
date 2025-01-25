@@ -29,6 +29,7 @@ abstract class NiveauEditorial extends Milestone {
     public function __construct($user, $editCount, $level) {
         parent::__construct($user);
         $this->editCount = $editCount;
+        $this->level = $level;
     }
    
     /** @inheritdoc */
